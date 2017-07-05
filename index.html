@@ -8,22 +8,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="PuppetPlant">
     <title>Puppet Plant</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" href="animate.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['home', 'problem', 'solution', 'team', 'contact'],
+				menu: '#menu',
+				scrollingSpeed: 700,
+                keyboardScrolling: true,
+		        animateAnchor: true,
+                parallax: false
+			});
+		});
+	</script>
 
 </head>
 
 <body>
-    <video autoplay loop id="video-background" muted plays-inline>
-        <source src="img/puppetplant.mp4"
-            type="video/mp4">
-    </video>
-    <div id="video-overlay"></div>
-    <div id="logo" style="vertical-align:middle; text-align:center"><img src="img/logo.png" width=100/></div>
-    <div id="about">An environmental companion that encourages you to think about sustainability.</div>
-    <div id="updatedButton">Keep me updated!</div>
+    <ul id="menu">
+        <li data-menuanchor="home" class="active">
+            <a href="#home"><i class="fa fa-circle-o" aria-hidden="true"></i></a>
+        </li>
+        <li data-menuanchor="problem">
+            <a href="#problem"><i class="fa fa-circle-o" aria-hidden="true"></i></a>
+        </li>
+        <li data-menuanchor="solution">
+            <a href="#solution"><i class="fa fa-circle-o" aria-hidden="true"></i></a>
+        </li>
+        <li data-menuanchor="team">
+            <a href="#team"><i class="fa fa-circle-o" aria-hidden="true"></i></a>
+        </li>
+        <li data-menuanchor="contact">
+            <a href="#contact"><i class="fa fa-circle-o" aria-hidden="true"></i></a>
+        </li>
+    </ul>
+    <!-- TODO: change icon to "fa fa-circle" if active -->
+    <div id="fullpage">
+        <div class="section">
+            <video autoplay loop id="video-background" muted plays-inline>
+                <source src="img/puppetplant.mp4" type="video/mp4">
+            </video>
+            <div id="video-overlay"></div>
+            <div id="logo" style="vertical-align:middle; text-align:center"><img src="img/logo.png" width=100/></div>
+            <div id="about">An environmental companion that encourages you to think about sustainability.</div>
+            <div id="updatedButton">Keep me updated!</div>
+
+        </div>
+        <div class="section">Section
+        </div>
+        <div class="section">Other section</div>
+    </div>
+
 </body>
 
 </html>

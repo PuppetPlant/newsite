@@ -42,7 +42,7 @@ body {
     width: 125px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 25px;
+    margin-top: 0px;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -50,7 +50,7 @@ body {
 
 /* Environmental compan */
 #about{
-    top: 25px;
+    top: 10px;
     width: 500px;
     height: 162px;
     margin-left: auto;
@@ -65,7 +65,7 @@ body {
 }
 
 #updatedButton{
-    top: 50px;
+    top: 25px;
     width: 300px;
     height: 60px;
     margin-left: auto;
@@ -85,4 +85,25 @@ body {
     border-radius: 60px;
     background-color: #FFF;
     color: #000;
+}
+
+#menu{
+    z-index: 100;
+    right: 3%;
+    color: #FFF;
+    width: 100px;
+    height: 100px;
+    font-size: 10px;
+    line-height: 50px;
+    position: absolute;
+    top: 37.5%;
+    transform: translateY(-50%);
+}
+
+#menu li{
+    list-style-type: none;
+}
+
+ul a, a:visited{
+    color: #FFF;
 }
