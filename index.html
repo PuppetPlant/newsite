@@ -10,6 +10,7 @@
     <title>Puppet Plant</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+    <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
@@ -22,9 +23,11 @@
 				scrollingSpeed: 700,
                 keyboardScrolling: true,
 		        animateAnchor: true,
-                parallax: false
+                scrollOverflow: true
 			});
 		});
+
+         $.fn.fullpage.reBuild(); 
 	</script>
 
 </head>
@@ -59,9 +62,62 @@
             <div id="updatedButton">Keep me updated!</div>
 
         </div>
-        <div class="section">Section
+        <div class="section">
+            <div id="problem-bg">
+                <div id="problem">
+                    <p style="font-weight: bold; font-size: 36px;">The planet we are living in is dying because of us.</p>
+                    <p style="font-weight: normal; font-size: 18px; line-height: 25px;">Lorem ipsum dolor sit amet, sea case moderatius id, ad movet nobis pro, sumo pertinacia usu id. Velit
+                        phaedrum adolescens ex duo. Ne falli eirmod consetetur eum. Dico nihil ad eos. Lorem ipsum dolor
+                        sit amet, sea case moderatius id, ad movet nobis pro, sumo pertinacia usu id. Velit phaedrum adolescens
+                        ex duo. Ne falli eirmod consetetur eum. Dico nihil ad eos.</p>
+                </div>
+            </div>
         </div>
-        <div class="section">Other section</div>
+        <div class="section">
+            <div id="solution-bg">
+                <div id="solution">Puppet Plant goes beyond just tracking your daily behaviors. It reinforces your habits.</div>
+                <div id="solution-outer">
+                    <div class="solution-info"><img src="img/plant.png" width=100/>
+                        <br/>
+                        <p style="font-size: 20px; font-weight: bold;">IT’S DYNAMIC!</p>
+                        <p>Lorem ipsum dolor sit amet, sea case moderatius id</p>
+                    </div>
+                    <div class="solution-info"><img src="img/phone.png" width=100/>
+                        <br/>
+                        <p style="font-size: 20px; font-weight: bold;">IT’S VISUAL!</p>
+                        <p>Lorem ipsum dolor sit amet, sea case moderatius id</p>
+                    </div>
+                    <div class="solution-info"><img src="img/people.png" width=100/>
+                        <br/>
+                        <p style="font-size: 20px; font-weight: bold;">IT’S FUN!</p>
+                        <p>Lorem ipsum dolor sit amet, sea case moderatius id</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div id="team-bg">
+                <div id="team">
+                    We are group of people who are passionate about making emotional connections with causes that we care about.
+                </div>
+                <div id="team-info">
+                    Lorem ipsum dolor sit amet, sea case moderatius id, ad movet nobis pro, sumo pertinacia usu id. Velit phaedrum adolescens
+                    ex duo. Ne falli eirmod consetetur eum. Dico nihil ad eos. Lorem ipsum dolor sit amet, sea case moderatius
+                    id, ad movet nobis pro, sumo pertinacia usu id. Velit phaedrum adolescens ex duo. Ne falli eirmod consetetur
+                    eum. Dico nihil ad eos.
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div id="contact-bg">
+                <div id="contact">Subscribe to get updates!
+                    <form>
+                        <input type="email" id="emailForm" placeholder="hello@example.com" required/>
+                        <button type="submit" id="submitButton">Sign up!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
