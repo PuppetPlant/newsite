@@ -27,6 +27,7 @@
 			});
 		});
 
+         $.fn.fullpage.reBuild(); 
 	</script>
 
 </head>
@@ -52,7 +53,7 @@
     <!-- TODO: change icon to "fa fa-circle" if active -->
     <div id="fullpage">
         <div class="section">
-            <video data-autoplay id="video-background" muted>
+            <video autoplay loop id="video-background" muted plays-inline>
                 <source src="img/puppetplant.mp4" type="video/mp4">
             </video>
             <div id="video-overlay"></div>
@@ -62,9 +63,9 @@
 
         </div>
         <div class="section">
-            <div id="problem-bg">
-                <div id="problem">
-                    <p style="font-weight: bold; font-size: 36px;">The planet we are living in is dying because of us.</p>
+            <div id="problem">
+				<div id="problem-bg">
+                    <h2>The planet we are living in is dying because of us.</h2>
                     <p style="font-weight: normal; font-size: 18px; line-height: 25px;">Lorem ipsum dolor sit amet, sea case moderatius id, ad movet nobis pro, sumo pertinacia usu id. Velit
                         phaedrum adolescens ex duo. Ne falli eirmod consetetur eum. Dico nihil ad eos. Lorem ipsum dolor
                         sit amet, sea case moderatius id, ad movet nobis pro, sumo pertinacia usu id. Velit phaedrum adolescens
@@ -73,8 +74,9 @@
             </div>
         </div>
         <div class="section">
-            <div id="solution-bg">
-                <div id="solution">Puppet Plant goes beyond just tracking your daily behaviors. It reinforces your habits.</div>
+            <div id="solution">
+				<div id="solution-bg">
+                <h2>Puppet Plant goes beyond just tracking your daily behaviors. It reinforces your habits.</h2>
                 <div id="solution-outer">
                     <div class="solution-info"><img src="img/plant.png" width=100/>
                         <br/>
@@ -92,13 +94,13 @@
                         <p>Lorem ipsum dolor sit amet, sea case moderatius id</p>
                     </div>
                 </div>
+				</div>
             </div>
         </div>
         <div class="section">
-            <div id="team-bg">
-                <div id="team">
-                    We are group of people who are passionate about making emotional connections with causes that we care about.
-                </div>
+            <div id="team">
+				<div id="team-bg">
+                <h2>We are group of people who are passionate about making emotional connections with causes that we care about.</h2>                            
                 <div id="team-info">
                     Lorem ipsum dolor sit amet, sea case moderatius id, ad movet nobis pro, sumo pertinacia usu id. Velit phaedrum adolescens
                     ex duo. Ne falli eirmod consetetur eum. Dico nihil ad eos. Lorem ipsum dolor sit amet, sea case moderatius
@@ -107,9 +109,11 @@
                 </div>
             </div>
         </div>
+			</div>
         <div class="section">
-            <div id="contact-bg">
-                <div id="contact">Subscribe to get updates!
+            <div id="contact">
+				<div id="contact-bg">
+                <h2>Subscribe to get updates!</h2>
                     <form>
                         <input type="email" id="emailForm" placeholder="hello@example.com" required/>
                         <button type="submit" id="submitButton">Sign up!</button>
