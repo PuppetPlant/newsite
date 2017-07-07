@@ -10,3 +10,4 @@
 * Find better (royalty free) icons
 * Fill in the "filler text" sections
 * Add email subcription functionality (MailChimp?)
+* Make site responsive (for mobile devices and tablets)
