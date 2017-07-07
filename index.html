@@ -27,7 +27,6 @@
 			});
 		});
 
-         $.fn.fullpage.reBuild(); 
 	</script>
 
 </head>
@@ -53,7 +52,7 @@
     <!-- TODO: change icon to "fa fa-circle" if active -->
     <div id="fullpage">
         <div class="section">
-            <video autoplay loop id="video-background" muted plays-inline>
+            <video data-autoplay id="video-background" muted>
                 <source src="img/puppetplant.mp4" type="video/mp4">
             </video>
             <div id="video-overlay"></div>
