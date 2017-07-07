@@ -162,7 +162,7 @@ ul a, a:visited{
     position: relative;
     font-style: normal;
     font-weight: normal;
-    line-height: 25px;
+    line-height: 20px;
     font-size: 14px;
     width: 170px;
     color: #FFFFFF;
@@ -282,3 +282,5 @@ ul a, a:visited{
     background-color: #000;
     color: #FFF;
 }
+
+input:focus, textarea:focus {outline: none;}
