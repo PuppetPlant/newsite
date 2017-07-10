@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
     <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css" />
@@ -23,102 +24,75 @@
 				scrollingSpeed: 700,
                 keyboardScrolling: true,
 		        animateAnchor: true,
-                scrollOverflow: true
+                scrollOverflow: true,
+                navigation: true,
+				navigationPosition: 'right',
+                sectionsColor: ['#333', '#FF919A', '#00B385', '#B3D0F1', '#000']
 			});
 		});
 
-         $.fn.fullpage.reBuild(); 
 	</script>
 
 </head>
 
 <body>
-    <ul id="menu">
-        <li data-menuanchor="home" class="active">
-            <a href="#home"><i class="fa fa-circle-o" aria-hidden="true"></i></a>
-        </li>
-        <li data-menuanchor="problem">
-            <a href="#problem"><i class="fa fa-circle-o" aria-hidden="true"></i></a>
-        </li>
-        <li data-menuanchor="solution">
-            <a href="#solution"><i class="fa fa-circle-o" aria-hidden="true"></i></a>
-        </li>
-        <li data-menuanchor="team">
-            <a href="#team"><i class="fa fa-circle-o" aria-hidden="true"></i></a>
-        </li>
-        <li data-menuanchor="contact">
-            <a href="#contact"><i class="fa fa-circle-o" aria-hidden="true"></i></a>
-        </li>
-    </ul>
-    <!-- TODO: change icon to "fa fa-circle" if active -->
     <div id="fullpage">
         <div class="section">
-            <video autoplay loop id="video-background" muted plays-inline>
+            <video data-autoplay loop id="video-background" muted>
                 <source src="img/puppetplant.mp4" type="video/mp4">
             </video>
             <div id="video-overlay"></div>
-            <div id="logo" style="vertical-align:middle; text-align:center"><img src="img/logo.png" width=100/></div>
-            <div id="about">An environmental companion that encourages you to think about sustainability.</div>
-            <div id="updatedButton">Keep me updated!</div>
+            <div class="animated fadeInDownBig" id="logo" style="vertical-align:middle; text-align:center"><img src="img/logo.png" width=100/></div>
+            <div class="animated fadeInDownBig" id="about">An environmental companion that encourages you to think about sustainability.</div>
+            <div class="animated fadeInDownBig" id="updatedButton">Keep me updated!</div>
 
         </div>
         <div class="section">
-            <div id="problem">
-				<div id="problem-bg">
-                    <h2>The planet we are living in is dying because of us.</h2>
-                    <p style="font-weight: normal; font-size: 18px; line-height: 25px;">Lorem ipsum dolor sit amet, sea case moderatius id, ad movet nobis pro, sumo pertinacia usu id. Velit
-                        phaedrum adolescens ex duo. Ne falli eirmod consetetur eum. Dico nihil ad eos. Lorem ipsum dolor
-                        sit amet, sea case moderatius id, ad movet nobis pro, sumo pertinacia usu id. Velit phaedrum adolescens
-                        ex duo. Ne falli eirmod consetetur eum. Dico nihil ad eos.</p>
+            <h2 style="width: 45%; margin-left: 6%;">The planet we are living in is dying because of us.</h2>
+            <div id="problem-info">
+                <p style="font-weight: normal; font-size: 18px; line-height: 25px;">Lorem ipsum dolor sit amet, sea case moderatius id, ad movet nobis pro, sumo pertinacia usu id. Velit phaedrum
+                    adolescens ex duo. Ne falli eirmod consetetur eum. Dico nihil ad eos. Lorem ipsum dolor sit amet, sea
+                    case moderatius id, ad movet nobis pro, sumo pertinacia usu id. Velit phaedrum adolescens ex duo. Ne
+                    falli eirmod consetetur eum. Dico nihil ad eos.</p>
+            </div>
+        </div>
+        <div class="section">
+            <h2 style="width: 65%; margin-left: auto; margin-right: auto; text-align: center;">Puppet Plant goes beyond just tracking your daily behaviors. It reinforces your habits.</h2>
+            <div id="solution-outer">
+                <div class="solution-info"><img src="img/plant.png" width=100/>
+                    <br/>
+                    <p style="font-size: 20px; font-weight: bold;">IT’S DYNAMIC!</p>
+                    <p>Lorem ipsum dolor sit amet, sea case moderatius id</p>
+                </div>
+                <div class="solution-info"><img src="img/phone.png" width=100/>
+                    <br/>
+                    <p style="font-size: 20px; font-weight: bold;">IT’S VISUAL!</p>
+                    <p>Lorem ipsum dolor sit amet, sea case moderatius id</p>
+                </div>
+                <div class="solution-info"><img src="img/people.png" width=100/>
+                    <br/>
+                    <p style="font-size: 20px; font-weight: bold;">IT’S FUN!</p>
+                    <p>Lorem ipsum dolor sit amet, sea case moderatius id</p>
                 </div>
             </div>
         </div>
         <div class="section">
-            <div id="solution">
-				<div id="solution-bg">
-                <h2>Puppet Plant goes beyond just tracking your daily behaviors. It reinforces your habits.</h2>
-                <div id="solution-outer">
-                    <div class="solution-info"><img src="img/plant.png" width=100/>
-                        <br/>
-                        <p style="font-size: 20px; font-weight: bold;">IT’S DYNAMIC!</p>
-                        <p>Lorem ipsum dolor sit amet, sea case moderatius id</p>
-                    </div>
-                    <div class="solution-info"><img src="img/phone.png" width=100/>
-                        <br/>
-                        <p style="font-size: 20px; font-weight: bold;">IT’S VISUAL!</p>
-                        <p>Lorem ipsum dolor sit amet, sea case moderatius id</p>
-                    </div>
-                    <div class="solution-info"><img src="img/people.png" width=100/>
-                        <br/>
-                        <p style="font-size: 20px; font-weight: bold;">IT’S FUN!</p>
-                        <p>Lorem ipsum dolor sit amet, sea case moderatius id</p>
-                    </div>
-                </div>
-				</div>
+            <h2 style="width: 55%; margin-left: 35%; text-align: right;">We are group of people who are passionate about making emotional connections with causes that we care about.</h2>
+            <div id="team-info">
+                Lorem ipsum dolor sit amet, sea case moderatius id, ad movet nobis pro, sumo pertinacia usu id. Velit phaedrum adolescens
+                ex duo. Ne falli eirmod consetetur eum. Dico nihil ad eos. Lorem ipsum dolor sit amet, sea case moderatius
+                id, ad movet nobis pro, sumo pertinacia usu id. Velit phaedrum adolescens ex duo. Ne falli eirmod consetetur
+                eum. Dico nihil ad eos.
             </div>
         </div>
         <div class="section">
-            <div id="team">
-				<div id="team-bg">
-                <h2>We are group of people who are passionate about making emotional connections with causes that we care about.</h2>                            
-                <div id="team-info">
-                    Lorem ipsum dolor sit amet, sea case moderatius id, ad movet nobis pro, sumo pertinacia usu id. Velit phaedrum adolescens
-                    ex duo. Ne falli eirmod consetetur eum. Dico nihil ad eos. Lorem ipsum dolor sit amet, sea case moderatius
-                    id, ad movet nobis pro, sumo pertinacia usu id. Velit phaedrum adolescens ex duo. Ne falli eirmod consetetur
-                    eum. Dico nihil ad eos.
-                </div>
-            </div>
-        </div>
-			</div>
-        <div class="section">
-            <div id="contact">
-				<div id="contact-bg">
-                <h2>Subscribe to get updates!</h2>
-                    <form>
-                        <input type="email" id="emailForm" placeholder="hello@example.com" required/>
-                        <button type="submit" id="submitButton">Sign up!</button>
-                    </form>
-                </div>
+            <h2 style="text-align: center;">Subscribe to get updates!</h2>
+            <form>
+                <input type="email" id="emailForm" placeholder="hello@example.com" required/>
+                <button type="submit" id="submitButton">Sign up!</button>
+            </form>
+            <div id="footer">
+                409 College Ave, Ithaca, NY 14850 / +1 646 745 7724 / jp2248@cornell.edu
             </div>
         </div>
     </div>
