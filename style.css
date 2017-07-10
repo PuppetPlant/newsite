@@ -80,7 +80,7 @@ body {
     position: relative;
 }
 
-#updatedButton:hover{
+#updatedButton:hover, #updatedButton a:hover{
     border: 2px solid #FFFFFF;
     border-radius: 60px;
     background-color: #FFF;
@@ -95,14 +95,14 @@ body {
     border: #FFF 1px solid;
     border-radius: 100%;
     background: transparent;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     margin: -5px 0px 0px -5px;
 }
 
 #fp-nav ul li a.active span{
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     margin: -5px 0px 0px -5px;
     background: #FFF;
 }
