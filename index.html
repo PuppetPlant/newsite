@@ -29,10 +29,6 @@
 				navigationPosition: 'right',
                 sectionsColor: ['#333', '#FF919A', '#00B385', '#B3D0F1', '#000'],
                 'onLeave': function(index, nextIndex, direction){
-                    var leavingSection = $(this);
-                    console.log(leavingSection);
-                    var childrenElements = $('.section').eq(nextIndex).children();
-                    console.log(childrenElements);
                     if(index == 1 && direction == 'down'){
                         $('.section').eq(index).children().children().addClass('animated rubberBand');
 		            }
