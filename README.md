@@ -9,4 +9,5 @@
 * Make site responsive (for mobile devices and tablets)
 
 https://github.com/alvarotrigo/fullPage.js
+
 https://github.com/daneden/animate.css
