@@ -66,9 +66,9 @@ body {
 
 
 h2 {
-    width: 45%; 
+    width: 80%; 
     margin-left: 6%;
-    margin-top: 20%;
+    font-size: 20px;
 }
 
 #updatedButton{
@@ -142,7 +142,7 @@ h2{
     text-align: center;
     padding-left: 25px;
     padding-right: 25px;
-    float: left;
+    float: center;
 }
 
 #team-info{
@@ -233,5 +233,37 @@ input:focus, textarea:focus {outline: none;}
     }
     #logo {
       margin-top: -60px;
+    }
+    h2 {
+        width: 80%; 
+        margin-left: 6%;
+        padding: 3%;
+        font-size: 30px;
+        line-height: 36px;
+    }
+    #problem-info p {
+        margin-left: 6%;
+    }
+    .solution-info {
+      display: block;
+      width: 100vw;
+      padding: 0px;
+      margin: 0px;
+      text-align: center;
+      top: 0px;
+    }
+    .solution-info img {
+      width: 25%;
+    }
+    .solution-info p {
+      line-height: 15px;
+      padding: 0px 15%;
+    }
+    #solution-outer {
+      padding-bottom: 40px;
+    }
+    #team-info {
+      font-size: 15px;
+      line-height: 22px;
     }
 }
