@@ -64,6 +64,13 @@ body {
     color: #FFFFFF;
 }
 
+
+h2 {
+    width: 80%; 
+    margin-left: 6%;
+    font-size: 20px;
+}
+
 #updatedButton{
     top: 15px;
     width: 300px;
@@ -135,7 +142,7 @@ h2{
     text-align: center;
     padding-left: 25px;
     padding-right: 25px;
-    float: left;
+    float: center;
 }
 
 #team-info{
@@ -203,3 +210,60 @@ h2{
 }
 
 input:focus, textarea:focus {outline: none;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #fp-nav {
+        display: none;
+    }
+    #about{
+        width: 80%;
+        height: auto;
+        margin: 0px;
+        padding: 10% 10% 0% 10%;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    #updatedButton{
+        top: 30px;
+        width: 200px;
+        height: 50px;
+        border-radius: 24px;
+        font-size: 18px;
+    }
+    #logo {
+      margin-top: -60px;
+    }
+    h2 {
+        width: 80%; 
+        margin-left: 6%;
+        padding: 3%;
+        font-size: 30px;
+        line-height: 36px;
+    }
+    #problem-info p {
+        margin-left: 6%;
+    }
+    .solution-info {
+      display: block;
+      width: 100vw;
+      padding: 0px;
+      margin: 0px;
+      text-align: center;
+      top: 0px;
+    }
+    .solution-info img {
+      width: 25%;
+    }
+    .solution-info p {
+      line-height: 15px;
+      padding: 0px 15%;
+    }
+    #solution-outer {
+      padding-bottom: 40px;
+    }
+    #team-info {
+      font-size: 15px;
+      line-height: 22px;
+    }
+}
