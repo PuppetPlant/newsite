@@ -75,6 +75,18 @@ h2.animated.slideInLeft {
     width: 85%;
     text-align: center;
 }
+h2.animated.bounceInUp {
+    text-align: right;
+    width: 60%;
+    padding-left: 15%;
+    padding-bottom: 0%;
+}
+h2.animated.fadeInDown {
+    text-align: center;
+    padding: 0px;
+    float: center;
+    width: 89%;
+}
 
 #updatedButton{
     top: 15px;
@@ -153,7 +165,7 @@ ul a, a:visited{
     font-weight: normal;
     font-size: 20px;
     line-height: 25px;
-    padding: 0% 10% 0% 20%;
+    padding: 0% 20% 0% 30%;
     text-align: right;
 }
 
@@ -246,9 +258,8 @@ input:focus, textarea:focus {outline: none;}
       float: center;
     }
     h2.animated.bounceInUp {
-        text-align: right;
-        width: 80%;
-        padding-bottom: 0%;
+        width: 70%;
+        padding: 10% 0% 0% 10%;
     }
     .fp-tableCell h2 {
       margin-top: 0px;
@@ -284,6 +295,10 @@ input:focus, textarea:focus {outline: none;}
     #team-info {
       font-size: 15px;
       line-height: 22px;
+      padding: 0px;
+      width: 70%;
+      padding: 0px;
+      padding-left: 15%;
     }
     #emailForm{
       top: 0px;
